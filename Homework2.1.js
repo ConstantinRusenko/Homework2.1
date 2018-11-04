@@ -9,11 +9,11 @@ function waterLevel(arr) {
         var rightMax = 0;
         var leftMax = 0;
         var minimalMaxLevel;
-        for (rightInd = i; rightInd < array.length; rightInd++) {
+        for (rightInd = i+1; rightInd < array.length; rightInd++) {
             rightMax = Math.max(rightMax,arr[rightInd]);
         }
 
-        for(leftInd = i; leftInd >= 0; leftInd--) {
+        for(leftInd = i-1; leftInd >= 0; leftInd--) {
             leftMax = Math.max(leftMax, arr[leftInd]);
         }
 
